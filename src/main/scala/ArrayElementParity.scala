@@ -1,7 +1,7 @@
 object ArrayElementParity {
 
   def uniqueNum(list : List[Int]): Int = {
-    1
+    val diff = list.sum
+    diff
   }
-
 }
