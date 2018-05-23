@@ -24,6 +24,10 @@ class ArrayElementParitySpec extends WordSpec with MustMatchers {
       ArrayElementParity.uniqueNum(List(1, -1, 2, -2, 3, 3)) mustEqual 3
     }
 
+    "when given a list of 1, -1, 2, -2, -3, -3 return 3" in {
+      ArrayElementParity.uniqueNum(List(1, -1, 2, -2, -3, -3)) mustEqual -3
+    }
+
   }
 
 }

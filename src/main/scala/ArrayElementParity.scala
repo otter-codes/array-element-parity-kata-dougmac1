@@ -1,7 +1,8 @@
 object ArrayElementParity {
 
-  def uniqueNum(list : List[Int]): Int = {
-    val diff = list.sum
-    diff
+  def uniqueNum(list: List[Int]): Int = {
+    list.filterNot({
+      x => list.contains(-x)
+    }).head
   }
 }
